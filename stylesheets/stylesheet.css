@@ -1,0 +1,155 @@
+
+body {
+  font-family: 'League Gothic Condensed', 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-color: #222;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 10;
+  background-color: tomato;
+  height: 80vh;
+  width: 80vh;
+  border-radius: 40vh;
+}
+
+.top {
+  height: 50vh;
+  width: 500vw;
+  background: linear-gradient(100deg, orange, tomato,rgb(128, 46, 172), blue);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: left 20s linear;
+}
+
+.top:hover {
+  left: -400vw;
+}
+
+.bottom {
+  height: 50vh;
+  background: #000;
+}
+
+.stripe {
+  height: 2vh;
+  width: 2%;
+  /*position: relative;*/
+}
+
+.name {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -53%);
+    margin: auto;
+    width: 100vw;
+    text-align: center;
+    font-weight: 100;
+    font-size: 4.5rem;
+}
+
+.description {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
+/*.first-name {
+  font-size: 30vh;
+}*/
+
+.c {
+  color: cyan;
+}
+
+.c-offset {
+  left: -11.5vw;
+}
+
+.m {
+  color: magenta;
+}
+
+.m-offset {
+  bottom: 35.5vh;
+}
+
+.y {
+  color: yellow;
+}
+
+.y-offset {
+  bottom: 36.8vh;
+}
+
+.c, .m, .y {
+  mix-blend-mode: multiply;
+}
+
+
+.content {
+  height: 100vh;
+  text-align: center;
+  z-index: 10;
+  position: relative;
+  border: 1px solid #000;
+}
+
+.selected-work {
+  padding: 0;
+}
+
+h2 {
+  font-size: 10vw;
+}
+
+.selected-work li {
+  font-size: 10vw;
+  list-style-type: none;
+  text-decoration: underline;
+  color: blue;
+  padding: 0;
+  margin: 0.65em 0;
+}
+
+#blue-box {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;
+  opacity: 0;
+  width: 50vw;
+}
+
+h1#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  background-blend-mode: difference;
+}
