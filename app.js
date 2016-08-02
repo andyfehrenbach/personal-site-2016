@@ -3,12 +3,29 @@
 $(document).ready(function() {
 
   console.log("This shit works!");
+  $('.top').addClass('state-2');
   // makeStripes();
 
   // $('#screen').scroll(function(){
   //   console.log('screen function');
   // });
 });
+
+$('.work').click(function(){
+  console.log('working');
+  $('.work-list').toggleClass('expanded');
+  $(this).toggleClass('clicked');
+});
+
+function unhider ($linkName, $className) {
+  $($linkName).hover(function(){
+    $($className).toggleClass('hidden');
+  });
+}
+
+unhider('.homi', '.homi-preview');
+unhider('.bridge', '.bridge-preview');
+unhider('.home-savants', '.home-savants-preview');
 
 // $(document).ready(function () {
 // $("html,body").animate({scrollTop: 0}, 100); //100ms for example
