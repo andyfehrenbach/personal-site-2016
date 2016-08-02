@@ -1,3 +1,8 @@
+@mixin full-screen {
+  width: 100vw;
+  height: 100vh;
+}
+
 @mixin transition($args...) {
   -webkit-transition: $args;
   -moz-transition: $args;
@@ -7,13 +12,14 @@
 }
 
 
-@mixin small-dash ($color, $speed) {
+@mixin small-dash ($color, $width) {
+  &::after {
   content: "";
   height: 4px;
   background-color: $color;
-  width: 1em;
+  width: $width;
   display: block;
   margin-top: .2em;
   margin-left: 0;
-  transition: all $speed ease-out;
+  }
 }
