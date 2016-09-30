@@ -1,8 +1,18 @@
 //mixins
+
+
+
 @import "mixins";
 
+
+//vars
 $head-font: 'League Gothic Condensed', 'Work Sans', sans-serif;
 $body-font: 'Work Sans', sans-serif;
+$large-font: 1.5rem;
+
+$dark-gray: hsla(0, 0%, 13%, 1);
+$dark-gray-60: hsla(0, 0%, 13%, .6);
+
 
 
 body {
@@ -14,21 +24,21 @@ body {
 }
 
 h1, h2, h3, a {
-  font-size: 1rem;
+  font-size: $large-font;
   font-weight: 400;
 }
 
 a {
   text-decoration: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: $large-font;
 }
 
 
 .background {
   @include full-screen;
   position: relative;
-  background-color: #222;
+  background-color: $dark-gray;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
@@ -50,14 +60,32 @@ a {
 //   border-radius: 40vh;
 // }
 
+
 .top {
   height: 50vh;
   width: 600vw;
-  background: linear-gradient(100deg, orange, tomato,rgb(128, 46, 172), blue, rgb(35, 219, 153));
+  background: linear-gradient(100deg, orange, tomato,rgb(128, 46, 172), rgba(44, 46, 236, 1), rgb(35, 219, 153));
   position: absolute;
   left: 0;
   top: 0;
-  @include transition(left 20s linear);
+  z-index: 100;
+  mix-blend-mode: multiply;
+  @include transition(left 25s linear);
+}
+
+.top-bg {
+  background-color: #fff;
+  height: 49.9vh;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 98;
+
+}
+
+.top-full {
+  height: 100vh;
 }
 
 .state-2 {
@@ -73,22 +101,36 @@ a {
   font-family: $head-font;
   letter-spacing: .02em;
   position: absolute;
-  top: 32%;
-  left: 3vw;
+  bottom: 50vh;
+  left: 2.5vw;
+  z-index: 101;
   /* transform: translate(-50%, -53%); */
   margin: auto;
   font-size: 10vw;
   font-weight: 300;
   text-align: left;
+  line-height: 1;
+  opacity: 1;
 }
+
+// .name-bottom {
+//   bottom: 0;
+//   opacity: .1;
+// }
+
+.hidden {
+  opacity: 0;
+}
+
+
 
 .description {
     font-weight: 400;
     margin: 0;
-    margin-left: 3vw;
+    margin-left: 2.5vw;
     font-size: 1.5rem;
     position: absolute;
-    top: 52.5%;
+    top: 52vh;
     list-style-type: none;
     padding: 0;
 
@@ -116,7 +158,7 @@ a {
 
 .work {
   cursor: pointer;
-  font-size: 1.5rem;
+  // font-size: 1.25rem;
   margin-top: 0;
   @include small-dash(gold, 1em);
   &::after {
@@ -131,25 +173,33 @@ a {
 }
 
 .work-container {
+  padding: 2rem;
   width: 20vw;
   position: absolute;
   right: 2vw;
-  top: 55%;
-  z-index: 50;
+  top: 55vh;
+  z-index: 105;
+  // background-color: $dark-gray-60;
 }
 
 .work-list {
   height: 0px;
   overflow: hidden;
-  @include transition (height 1s ease-out);
+  // @include transition (height 1s ease-out);
+  @include transition (.3s ease-out);
   list-style-type: none;
   padding: 0;
   line-height: 1.6;
-  font-size: 1.5rem;
+  // font-size: 1.2rem;
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
 .expanded {
-  height: 400px;
+  height: auto;
+  max-height: 400px;
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .homi {
@@ -194,7 +244,7 @@ a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 45;
+  z-index: 99;
   @include full-screen;
   opacity: 1;
   transition: opacity .2s ease-out;
@@ -206,13 +256,13 @@ a {
 }
 
 .homi-preview {
-  background: tomato;
+  @include fs-image("../../img/Homi-screenshot.png");
 }
 
 .bridge-preview {
-  background: rgb(35, 219, 153);
+  @include fs-image("../../img/Bridge-app-screenshot.png");
 }
 
 .home-savants-preview {
-  background: rgb(128, 46, 172);
+  @include fs-image("../../img/Home-savants-screenshot.png");
 }

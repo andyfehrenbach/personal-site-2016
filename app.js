@@ -1,4 +1,4 @@
-///Copyright 2016 Andy Fehrenbach
+///Copyright 2016 Andy Fehrenbach. This code is probably shit.
 
 $(document).ready(function() {
 
@@ -15,6 +15,10 @@ $('.work').click(function(){
   console.log('working');
   $('.work-list').toggleClass('expanded');
   $(this).toggleClass('clicked');
+  $('.top').toggleClass('top-full');
+  $('.name').toggleClass('name-bottom');
+  $('.description').toggleClass('hidden');
+
 });
 
 function unhider ($linkName, $className) {

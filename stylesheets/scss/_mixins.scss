@@ -23,3 +23,12 @@
   margin-left: 0;
   }
 }
+
+@mixin fs-image ($src) {
+  background: url($src) no-repeat center center fixed;
+  -webkit-filter: grayscale(1) contrast(1.1);
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
