@@ -16,7 +16,7 @@ $('.work').click(function(){
   $('.work-list').toggleClass('expanded');
   $(this).toggleClass('clicked');
   $('.top').toggleClass('top-full');
-  $('.name').toggleClass('name-bottom');
+  $('.name').toggleClass('hidden');
   $('.description').toggleClass('hidden');
 
 });
