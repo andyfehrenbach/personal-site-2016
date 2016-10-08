@@ -1,8 +1,10 @@
-//mixins
+* {
+  border: 1px solid #000;
+}
 
-
-
-@import "mixins";
+* {
+  border: none;
+}
 
 
 //vars
