@@ -1,279 +1,37 @@
-@charset "UTF-8";
-* {
-  border: 1px solid #000; }
-
-* {
-  border: none; }
-
 body {
-  font-family: "Work Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #fff;
-  -webkit-font-smoothing: antialiased; }
+  padding: 0 4vw;
+  text-transform: uppercase; }
 
-h1, h2, h3, a {
-  font-size: 1.5rem;
-  font-weight: 400; }
+h1, a {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -.04em;
+  color: #000; }
+
+a:hover {
+  color: blue; }
 
 a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.5rem; }
-
-.background {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-color: #212121;
-  display: flex;
-  flex-flow: column nowrap;
-  position: relative;
-  overflow: hidden; }
-
-.top {
-  height: 50vh;
-  width: 600vw;
-  background: linear-gradient(100deg, orange, tomato, #802eac, #2c2eec, #23db99);
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  mix-blend-mode: multiply;
-  -webkit-transition: left 25s linear;
-  -moz-transition: left 25s linear;
-  -ms-transition: left 25s linear;
-  -o-transition: left 25s linear;
-  transition: left 25s linear; }
-
-.top-bg {
-  background-color: #fff;
-  height: 49.9vh;
-  width: 100vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 98; }
-
-.top-full {
-  height: 100vh; }
-
-.state-2 {
-  left: -500vw; }
+  display: block; }
 
 .name {
-  font-family: "League Gothic Condensed", "Work Sans", sans-serif;
-  letter-spacing: .02em;
-  position: absolute;
-  bottom: 50vh;
-  left: 2.5vw;
-  z-index: 101;
-  /* transform: translate(-50%, -53%); */
-  margin: auto;
-  font-size: 10vw;
-  font-weight: 300;
-  text-align: left;
-  line-height: 1;
-  opacity: 1; }
+  font-size: 10vw; }
 
-.hidden {
-  opacity: 0; }
-
-.description {
-  font-weight: 400;
-  margin: 0;
-  margin-left: 2.5vw;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 52vh;
-  list-style-type: none;
-  padding: 0; }
-
-.description-list {
-  display: inline-block; }
-  .description-list:last-child {
-    padding-right: 2em; }
-    .description-list:last-child::after {
-      content: "🍻";
-      display: block;
-      position: absolute;
-      top: -.14em;
-      right: .25em;
-      font-size: 125%; }
-
-.work {
-  cursor: pointer;
-  margin-top: 0; }
-  .work::after {
-    content: "";
-    height: 4px;
-    background-color: gold;
-    width: 1em;
-    display: block;
-    margin-top: .2em;
-    margin-left: 0; }
-  .work::after {
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
-
-.clicked::after {
-  content: "";
-  height: 4px;
-  background-color: tomato;
-  width: 3.1em;
-  display: block;
-  margin-top: .2em;
-  margin-left: 0; }
-
-.work-container {
-  padding: 2rem;
-  width: 20vw;
-  position: absolute;
-  right: 2vw;
-  top: 55vh;
-  z-index: 105; }
-
-.work-list {
-  height: 0px;
-  overflow: hidden;
-  -webkit-transition: 0.3s ease-out;
-  -moz-transition: 0.3s ease-out;
-  -ms-transition: 0.3s ease-out;
-  -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-  list-style-type: none;
-  padding: 0;
-  line-height: 1.6;
-  transform: translateY(-20px);
-  opacity: 0; }
-
-.expanded {
-  height: auto;
-  max-height: 400px;
-  transform: translateY(0);
-  opacity: 1; }
+.title {
+  font-size: 5.55vw; }
 
 .homi {
-  position: relative; }
+  font-size: 16.3vw; }
 
-.homi::after {
-  content: "";
-  height: 4px;
-  background-color: purple;
-  width: 1em;
-  display: block;
-  margin-top: .2em;
-  margin-left: 0; }
-.homi::after {
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -ms-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out; }
+.homi-recruiter {
+  font-size: 17.4vw; }
 
-.homi:hover::after {
-  margin-left: .5em; }
+.bridge {
+  font-size: 5.03vw; }
 
-.bridge::after {
-  content: "";
-  height: 4px;
-  background-color: lightgreen;
-  width: 1em;
-  display: block;
-  margin-top: .2em;
-  margin-left: 0; }
-.bridge::after {
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -ms-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out; }
-
-.bridge:hover::after {
-  margin-left: 1em; }
-
-.home-savants::after {
-  content: "";
-  height: 4px;
-  background-color: navy;
-  width: 1em;
-  display: block;
-  margin-top: .2em;
-  margin-left: 0; }
-.home-savants::after {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  -ms-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out; }
-
-.home-savants:hover::after {
-  margin-left: 1.5em; }
-
-.preview {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100vw;
-  height: 100vh;
-  opacity: 1;
-  transition: opacity .2s ease-out; }
-
-.hidden {
-  visibility: hidden;
-  opacity: 0; }
-
-.homi-preview {
-  background: url("../../img/Homi-screenshot.png") no-repeat center center fixed;
-  -webkit-filter: grayscale(1) contrast(1.1);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.bridge-preview {
-  background: url("../../img/Bridge-app-screenshot.png") no-repeat center center fixed;
-  -webkit-filter: grayscale(1) contrast(1.1);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-.home-savants-preview {
-  background: url("../../img/Home-savants-screenshot.png") no-repeat center center fixed;
-  -webkit-filter: grayscale(1) contrast(1.1);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-body {
-  background: #666; }
-
-ul {
-  padding: 0;
-  margin: 0; }
-
-li {
-  list-style-type: none; }
-
-li.nav-item {
-  height: 100%;
-  display: inline-block;
-  color: #23db99; }
-  li.nav-item a {
-    color: inherit;
-    height: 100%; }
-
-.nav-vert {
-  transform: rotate(90deg) translate(50%);
-  display: block;
-  background-color: tomato;
-  right: 0;
-  top: 0; }
+.home-savants {
+  font-size: 9.26vw; }
 
 /*# sourceMappingURL=index.css.map */
