@@ -6,9 +6,26 @@ $large-font: 1.5rem;
 
 $dark-gray: hsla(0, 0%, 13%, 1);
 $dark-gray-60: hsla(0, 0%, 13%, .6);
+
+@mixin hover-color($color) {
+  &:hover{
+    background-color: $color;
+  }
+}
+
+
 body {
+  margin: 0;
   padding: 0 4vw;
+  padding-top: 2vw;
   text-transform: uppercase;
+  transition: background-color .5s ease;
+  background-color: #fff;
+}
+
+.waffles {
+  text-align: center;
+  z-index: 5;
 }
 
 h1, a {
@@ -16,8 +33,9 @@ h1, a {
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  letter-spacing: -.04em;
+  letter-spacing: -.053em;
   color: #000;
+  z-index: 10;
 }
 
 a:hover {
@@ -29,24 +47,71 @@ a {
 }
 
 .name {
-  font-size: 10vw
+  font-size: 10.2vw
 }
 .title {
-  font-size: 5.55vw;
+  font-size: 4.6vw;
 }
 
 .homi {
-  font-size: 16.3vw;
+  font-size: 16.6vw;
 }
 
 .homi-recruiter {
-  font-size: 17.4vw;
+  font-size: 17.7vw;
 }
 
 .bridge {
-  font-size: 5.03vw;
+  font-size: 5.14vw;
 }
 
 .home-savants {
-  font-size: 9.26vw;
+  font-size: 9.46vw;
+}
+
+.email {
+  font-size: 6.1vw;
+}
+
+.social-links {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.social-link {
+  display: inline-block;
+  width: 8vw;
+  height: 8vw;
+  margin-right: 2vw;
+  background-color: #000;
+  position: relative;
+
+  &.linkedin {
+    @include hover-color(#0077b5);
+  }
+
+  &.twitter {
+    @include hover-color(#55acee);
+  }
+
+  &.facebook {
+    @include hover-color(#3b5998);
+  }
+
+  &.github{
+    @include hover-color(#4078c0);
+  }
+
+
+
+  img {
+    position: absolute;
+    max-height: 75%;
+    max-width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

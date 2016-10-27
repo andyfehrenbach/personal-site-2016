@@ -1,14 +1,23 @@
 body {
+  margin: 0;
   padding: 0 4vw;
-  text-transform: uppercase; }
+  padding-top: 2vw;
+  text-transform: uppercase;
+  transition: background-color .5s ease;
+  background-color: #fff; }
+
+.waffles {
+  text-align: center;
+  z-index: 5; }
 
 h1, a {
   font-family: "Work Sans", sans-serif;
   font-weight: 600;
   line-height: 1;
   margin: 0;
-  letter-spacing: -.04em;
-  color: #000; }
+  letter-spacing: -.053em;
+  color: #000;
+  z-index: 10; }
 
 a:hover {
   color: blue; }
@@ -17,21 +26,53 @@ a {
   display: block; }
 
 .name {
-  font-size: 10vw; }
+  font-size: 10.2vw; }
 
 .title {
-  font-size: 5.55vw; }
+  font-size: 4.6vw; }
 
 .homi {
-  font-size: 16.3vw; }
+  font-size: 16.6vw; }
 
 .homi-recruiter {
-  font-size: 17.4vw; }
+  font-size: 17.7vw; }
 
 .bridge {
-  font-size: 5.03vw; }
+  font-size: 5.14vw; }
 
 .home-savants {
-  font-size: 9.26vw; }
+  font-size: 9.46vw; }
+
+.email {
+  font-size: 6.1vw; }
+
+.social-links {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  position: relative; }
+
+.social-link {
+  display: inline-block;
+  width: 8vw;
+  height: 8vw;
+  margin-right: 2vw;
+  background-color: #000;
+  position: relative; }
+  .social-link.linkedin:hover {
+    background-color: #0077b5; }
+  .social-link.twitter:hover {
+    background-color: #55acee; }
+  .social-link.facebook:hover {
+    background-color: #3b5998; }
+  .social-link.github:hover {
+    background-color: #4078c0; }
+  .social-link img {
+    position: absolute;
+    max-height: 75%;
+    max-width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=index.css.map */
