@@ -75,4 +75,20 @@ a {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+.frame {
+  overflow-x: hidden;
+  width: 100%;
+  margin-top: 4vw;
+  margin-bottom: 4vw; }
+
+.rainbow {
+  height: 88vh;
+  width: 1200vw;
+  background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
+  position: relative;
+  left: 0;
+  transition: left 40s linear; }
+  .rainbow:hover {
+    left: -1100vw; }
+
 /*# sourceMappingURL=index.css.map */
