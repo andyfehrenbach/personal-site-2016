@@ -1,18 +1,8 @@
-
-//vars
-$head-font: 'Work Sans', sans-serif;
-$body-font: 'Work Sans', sans-serif;
-$large-font: 1.5rem;
-
-$dark-gray: hsla(0, 0%, 13%, 1);
-$dark-gray-60: hsla(0, 0%, 13%, .6);
-
 @mixin hover-color($color) {
   &:hover{
     background-color: $color;
   }
 }
-
 
 body {
   margin: 0;
@@ -29,7 +19,7 @@ body {
 }
 
 h1, a {
-  font-family: $head-font;
+  font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica',  sans-serif;
   font-weight: 600;
   line-height: 1;
   margin: 0;
@@ -38,19 +28,20 @@ h1, a {
   z-index: 10;
 }
 
-a:hover {
-  color: blue;
-}
-
 a {
   display: block;
+}
+
+a:hover {
+  color: blue;
 }
 
 .name {
   font-size: 10.2vw
 }
+
 .title {
-  font-size: 4.6vw;
+  font-size: 4.5vw;
 }
 
 .homi {
@@ -62,11 +53,11 @@ a {
 }
 
 .bridge {
-  font-size: 5.14vw;
+  font-size: 4.95vw;
 }
 
 .home-savants {
-  font-size: 9.46vw;
+  font-size: 8.9vw;
 }
 
 .email {
@@ -76,7 +67,7 @@ a {
 .social-links {
   display: block;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 3vw;
   position: relative;
 }
 
@@ -104,7 +95,23 @@ a {
     @include hover-color(#4078c0);
   }
 
+  &.pinterest {
+    @include hover-color(#bd081c);
+  }
 
+  &.instagram {
+    &:hover {
+      background:
+        radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    }
+  }
 
   img {
     position: absolute;
@@ -115,22 +122,38 @@ a {
     transform: translate(-50%, -50%);
   }
 }
+
 .frame {
   overflow-x: hidden;
   width: 100%;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
+  height: 88vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
 .rainbow {
-  height: 88vh;
   width: 1200vw;
+  height: 100%;
   background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
   position: relative;
   left: 0;
-  transition: left 40s linear;
-
+  transition: left 8s ease-in;
   &:hover {
     left: -1100vw;
+    transition: left 45s linear;
   }
+}
+
+.p-footer {
+  text-transform: none;
+  font-size: .8rem;
+  margin: 0;
+  padding: 1vw 0;
+}
+
+.bottom-rule {
+  background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+  height: 3px;
+  width: 100vw;
+  margin-left: -4vw;
 }

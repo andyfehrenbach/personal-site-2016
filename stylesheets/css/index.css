@@ -11,7 +11,7 @@ body {
   z-index: 5; }
 
 h1, a {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica',  sans-serif;
   font-weight: 600;
   line-height: 1;
   margin: 0;
@@ -19,17 +19,17 @@ h1, a {
   color: #000;
   z-index: 10; }
 
-a:hover {
-  color: blue; }
-
 a {
   display: block; }
+
+a:hover {
+  color: blue; }
 
 .name {
   font-size: 10.2vw; }
 
 .title {
-  font-size: 4.6vw; }
+  font-size: 4.5vw; }
 
 .homi {
   font-size: 16.6vw; }
@@ -38,10 +38,10 @@ a {
   font-size: 17.7vw; }
 
 .bridge {
-  font-size: 5.14vw; }
+  font-size: 4.95vw; }
 
 .home-savants {
-  font-size: 9.46vw; }
+  font-size: 8.9vw; }
 
 .email {
   font-size: 6.1vw; }
@@ -49,7 +49,7 @@ a {
 .social-links {
   display: block;
   text-align: left;
-  margin-top: 1rem;
+  margin-top: 3vw;
   position: relative; }
 
 .social-link {
@@ -67,6 +67,10 @@ a {
     background-color: #3b5998; }
   .social-link.github:hover {
     background-color: #4078c0; }
+  .social-link.pinterest:hover {
+    background-color: #bd081c; }
+  .social-link.instagram:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
   .social-link img {
     position: absolute;
     max-height: 75%;
@@ -78,17 +82,31 @@ a {
 .frame {
   overflow-x: hidden;
   width: 100%;
-  margin-top: 4vw;
-  margin-bottom: 4vw; }
+  height: 88vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh; }
 
 .rainbow {
-  height: 88vh;
   width: 1200vw;
+  height: 100%;
   background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
   position: relative;
   left: 0;
-  transition: left 40s linear; }
+  transition: left 8s ease-in; }
   .rainbow:hover {
-    left: -1100vw; }
+    left: -1100vw;
+    transition: left 45s linear; }
+
+.p-footer {
+  text-transform: none;
+  font-size: .8rem;
+  margin: 0;
+  padding: 1vw 0; }
+
+.bottom-rule {
+  background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+  height: 3px;
+  width: 100vw;
+  margin-left: -4vw; }
 
 /*# sourceMappingURL=index.css.map */
