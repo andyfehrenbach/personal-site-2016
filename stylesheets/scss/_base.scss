@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.waffles {
+😮 {
   text-align: center;
   z-index: 5;
 }
@@ -33,46 +33,42 @@ a {
   display: block;
 }
 
-// a:hover {
-//   color: blue;
-// }
-
-.name {
-  font-size: 10.2vw
+.🍾 {
+  font-size: 10.2vw;
 }
 
-.title {
+.🌮 {
   font-size: 4.5vw;
 }
 
-.homi {
+.🔥 {
   font-size: 16.6vw;
 }
 
-.homi-recruiter {
+.🍆 {
   font-size: 17.7vw;
 }
 
-.bridge {
+.🙌 {
   font-size: 4.95vw;
 }
 
-.home-savants {
+.😻 {
   font-size: 8.9vw;
 }
 
-.email {
+.🍻 {
   font-size: 6.1vw;
 }
 
-.social-links {
+.👻 {
   display: block;
   text-align: left;
   margin-top: 3vw;
   position: relative;
 }
 
-.social-link {
+.💩 {
   display: inline-block;
   width: 8vw;
   height: 8vw;
@@ -80,27 +76,27 @@ a {
   background-color: #000;
   position: relative;
 
-  &.linkedin {
+  &.😎 {
     @include hover-color(#0077b5);
   }
 
-  &.twitter {
+  &.🏉 {
     @include hover-color(#55acee);
   }
 
-  &.facebook {
+  &.🙃 {
     @include hover-color(#3b5998);
   }
 
-  &.github{
+  &.🙀{
     @include hover-color(#4078c0);
   }
 
-  &.pinterest {
+  &.👯 {
     @include hover-color(#bd081c);
   }
 
-  &.instagram {
+  &.🌈 {
     &:hover {
       background:
         radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
@@ -124,7 +120,7 @@ a {
   }
 }
 
-.frame {
+.💥 {
   overflow-x: hidden;
   width: 100%;
   height: 88vh;
@@ -132,7 +128,7 @@ a {
   margin-bottom: 6vh;
 }
 
-.rainbow {
+.🎯 {
   width: 1200vw;
   height: 100%;
   background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
@@ -145,20 +141,19 @@ a {
   }
 }
 
-.p-footer {
+.⛵️ {
   text-transform: none;
   font-size: .8rem;
   margin: 0;
   padding: 1vw 0;
 }
 
-.bottom-rule {
+.🌀 {
   background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
   height: 3px;
   width: 100vw;
   margin-left: -4vw;
 }
-
 
 @media (min-width:769px) {
   a:hover {
@@ -168,12 +163,12 @@ a {
 }
 
 @media (max-width:769px) {
-  .frame {
+  .💥 {
     margin-top: 4%;
     margin-bottom: 4%;
   }
 
-  .social-link {
+  .💩 {
     width: 10vw;
     height: 10vw;
     margin-right: 1vw;

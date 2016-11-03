@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0 4vw;
@@ -7,7 +8,7 @@ body {
   background-color: #fff;
   -webkit-font-smoothing: antialiased; }
 
-.waffles {
+😮 {
   text-align: center;
   z-index: 5; }
 
@@ -23,53 +24,53 @@ h1, a {
 a {
   display: block; }
 
-.name {
+.🍾 {
   font-size: 10.2vw; }
 
-.title {
+.🌮 {
   font-size: 4.5vw; }
 
-.homi {
+.🔥 {
   font-size: 16.6vw; }
 
-.homi-recruiter {
+.🍆 {
   font-size: 17.7vw; }
 
-.bridge {
+.🙌 {
   font-size: 4.95vw; }
 
-.home-savants {
+.😻 {
   font-size: 8.9vw; }
 
-.email {
+.🍻 {
   font-size: 6.1vw; }
 
-.social-links {
+.👻 {
   display: block;
   text-align: left;
   margin-top: 3vw;
   position: relative; }
 
-.social-link {
+.💩 {
   display: inline-block;
   width: 8vw;
   height: 8vw;
   margin-right: 1.5vw;
   background-color: #000;
   position: relative; }
-  .social-link.linkedin:hover {
+  .💩.😎:hover {
     background-color: #0077b5; }
-  .social-link.twitter:hover {
+  .💩.🏉:hover {
     background-color: #55acee; }
-  .social-link.facebook:hover {
+  .💩.🙃:hover {
     background-color: #3b5998; }
-  .social-link.github:hover {
+  .💩.🙀:hover {
     background-color: #4078c0; }
-  .social-link.pinterest:hover {
+  .💩.👯:hover {
     background-color: #bd081c; }
-  .social-link.instagram:hover {
+  .💩.🌈:hover {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
-  .social-link img {
+  .💩 img {
     position: absolute;
     max-height: 75%;
     max-width: 75%;
@@ -77,31 +78,31 @@ a {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.frame {
+.💥 {
   overflow-x: hidden;
   width: 100%;
   height: 88vh;
   margin-top: 6vh;
   margin-bottom: 6vh; }
 
-.rainbow {
+.🎯 {
   width: 1200vw;
   height: 100%;
   background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
   position: relative;
   left: 0;
   transition: left 8s ease-in; }
-  .rainbow:hover {
+  .🎯:hover {
     left: -1100vw;
     transition: left 45s linear; }
 
-.p-footer {
+.⛵️ {
   text-transform: none;
   font-size: .8rem;
   margin: 0;
   padding: 1vw 0; }
 
-.bottom-rule {
+.🌀 {
   background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
   height: 3px;
   width: 100vw;
@@ -111,11 +112,11 @@ a {
   a:hover {
     color: blue; } }
 @media (max-width: 769px) {
-  .frame {
+  .💥 {
     margin-top: 4%;
     margin-bottom: 4%; }
 
-  .social-link {
+  .💩 {
     width: 10vw;
     height: 10vw;
     margin-right: 1vw; } }
