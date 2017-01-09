@@ -21,25 +21,35 @@ a {
   display: block; }
 
 .🍾 {
-  font-size: 10.2vw; }
+  font-size: 10.2vw;
+  white-space: nowrap;
+  margin-left: -0.6vw; }
 
 .🌮 {
-  font-size: 4.5vw; }
+  font-size: 4.57vw;
+  white-space: nowrap;
+  margin-left: -0.5vw; }
 
 .🔥 {
-  font-size: 16.6vw; }
+  font-size: 16.4vw;
+  white-space: nowrap; }
 
 .🍆 {
-  font-size: 17.7vw; }
+  font-size: 17.5vw;
+  white-space: nowrap; }
 
 .🙌 {
-  font-size: 4.95vw; }
+  font-size: 4.94vw;
+  white-space: nowrap; }
 
 .😻 {
-  font-size: 8.9vw; }
+  font-size: 8.85vw;
+  white-space: nowrap; }
 
 .🍻 {
-  font-size: 6.1vw; }
+  font-size: 6.08vw;
+  white-space: nowrap;
+  margin-left: -0.3vw; }
 
 .👻 {
   text-align: left;
@@ -62,6 +72,8 @@ a {
     background-color: #4078c0; }
   .💩.👯:hover {
     background-color: #bd081c; }
+  .💩.codepen:hover {
+    background-color: #76daff; }
   .💩.🌈:hover {
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%); }
   .💩 img {
@@ -86,9 +98,10 @@ a {
   position: relative;
   left: 0;
   transition: left 8s ease-in; }
-  .🎯:hover {
-    left: -1100vw;
-    transition: left 45s linear; }
+
+.magic {
+  left: -1100vw;
+  transition: left 45s linear; }
 
 .⛵️ {
   text-transform: none;
@@ -96,11 +109,14 @@ a {
   margin: 0;
   padding: 1vw 0; }
 
-.🌀 {
+body:after, body::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
   background: linear-gradient(100deg, orange, tomato, darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
   height: 3px;
-  width: 100vw;
-  margin-left: -4vw; }
+  width: 100%; }
 
 @media (min-width: 769px) {
   a:hover {

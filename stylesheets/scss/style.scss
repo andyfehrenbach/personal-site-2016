@@ -29,32 +29,43 @@ a {
   display: block;
 }
 
+
 .🍾 {
-  font-size: 10vw;
+    font-size: 10.2vw;
+       white-space: nowrap;
+       margin-left: -0.6vw;
 }
 
 .🌮 {
-  font-size: 4.49vw;
+    font-size: 4.57vw;
+      white-space: nowrap;
+      margin-left: -0.5vw;
 }
 
 .🔥 {
-  font-size: 16.6vw;
+  font-size: 16.4vw;
+  white-space: nowrap;
 }
 
 .🍆 {
-  font-size: 17.7vw;
+  font-size: 17.5vw;
+  white-space: nowrap;
 }
 
 .🙌 {
   font-size: 4.94vw;
+  white-space: nowrap;
 }
 
 .😻 {
   font-size: 8.85vw;
+  white-space: nowrap;
 }
 
 .🍻 {
-  font-size: 6.1vw;
+    font-size: 6.08vw;
+      white-space: nowrap;
+      margin-left: -0.3vw;
 }
 
 .👻 {
@@ -88,6 +99,10 @@ a {
 
   &.👯 {
     @include hover-color(#bd081c);
+  }
+
+  &.codepen {
+    @include hover-color(#76daff);
   }
 
   &.🌈 {
@@ -129,10 +144,11 @@ a {
   position: relative;
   left: 0;
   transition: left 8s ease-in;
-  &:hover {
-    left: -1100vw;
-    transition: left 45s linear;
-  }
+}
+
+.magic {
+  left: -1100vw;
+  transition: left 45s linear;
 }
 
 .⛵️ {
@@ -142,11 +158,22 @@ a {
   padding: 1vw 0;
 }
 
-.🌀 {
-  background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
-  height: 3px;
-  width: 100vw;
-  margin-left: -4vw;
+// .🌀 {
+//   background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+//   height: 3px;
+//   width: 100vw;
+//   margin-left: -4vw;
+// }
+
+body:after, body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+    height: 3px;
+    width: 100%;
+    // margin-left: -4vw;
 }
 
 @media (min-width:769px) {
