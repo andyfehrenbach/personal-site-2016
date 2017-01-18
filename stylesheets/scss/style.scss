@@ -17,7 +17,7 @@ body {
   text-align: center;
 }
 
-h1, a {
+h1, a, p {
   font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica',  sans-serif;
   font-weight: 600;
   line-height: 1;
@@ -51,7 +51,7 @@ a {
 }
 
 .🍆 {
-  font-size: 17.5vw;
+  font-size: 17.6vw;
   white-space: nowrap;
 }
 
@@ -65,22 +65,30 @@ a {
   white-space: nowrap;
 }
 
+.ob {
+  font-size: 15.3vw;
+  line-height: .9;
+  margin-left: -0.8vw;
+  white-space: nowrap;
+}
+
 .🍻 {
     font-size: 6.08vw;
       white-space: nowrap;
       margin-left: -0.3vw;
+      margin-top: .2em;
 }
 
 .👻 {
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
   margin-top: 3vw;
 }
 
 .💩 {
-  display: inline-block;
-  width: 8vw;
-  height: 8vw;
-  margin-right: 1.5vw;
+  flex: 1;
+  width: 12vw;
+  height: 12vw;
   background-color: #000;
   position: relative;
 
@@ -138,6 +146,7 @@ a {
   height: 88vh;
   margin-top: 6vh;
   margin-bottom: 6vh;
+  cursor: none;
 }
 
 .🎯 {
@@ -155,8 +164,9 @@ a {
 }
 
 .⛵️ {
-  text-transform: none;
-  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: 1.5vw;
   margin: 0;
   padding: 1vw 0;
 }
@@ -174,7 +184,7 @@ body:after, body::after {
     position: absolute;
     left: 0;
     background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
-    height: 3px;
+    height: .4vw;
     width: 100%;
     // margin-left: -4vw;
 }
@@ -188,13 +198,9 @@ body:after, body::after {
 
 @media (max-width:769px) {
   .💥 {
-    margin-top: 4%;
-    margin-bottom: 4%;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    height: 96vh;
   }
 
-  .💩 {
-    width: 10vw;
-    height: 10vw;
-    margin-right: 1vw;
-  }
 }
