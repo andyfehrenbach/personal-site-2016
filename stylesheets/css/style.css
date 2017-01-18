@@ -4,7 +4,8 @@ body {
   padding: 0 4vw;
   padding-top: 2vw;
   text-transform: uppercase;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  cursor: url(../../img/explosion-44.png), auto; }
 
 .😮 {
   text-align: center; }
@@ -15,7 +16,8 @@ h1, a {
   line-height: 1;
   margin: 0;
   letter-spacing: -.053em;
-  color: #000; }
+  color: #000;
+  cursor: url(../../img/explosion-44.png), auto; }
 
 a {
   display: block; }

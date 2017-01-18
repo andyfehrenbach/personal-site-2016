@@ -2,7 +2,7 @@ $(document).ready(function () {
   console.log("%c////////////////////////////////", "background-color: slategray; color: midnightblue; font-family: verdana; font-weight: bold");
   console.log("%cPsst... Fellow dev... Looking for a         ", "background-color: mediumspringgreen; color: midnightblue; font-family: verdana; font-weight: bold; padding: 1px");
   console.log("%cboundary-pushing web designer?        ", "background-color: mediumspringgreen; color: midnightblue; font-family: verdana; font-weight: bold; padding: 1px");
-  console.log("%cI'm considering new opportunities.      ", "background-color: mediumspringgreen; color: midnightblue; font-family: verdana; font-weight: bold; padding: 1px");
+  console.log("%cI'm looking for a new gig  💼                 ", "background-color: mediumspringgreen; color: midnightblue; font-family: verdana; font-weight: bold; padding: 1px");
   console.log("%cLet's get in touch!                                  ", "background-color: mediumspringgreen; color: midnightblue; font-family: verdana; font-weight: bold; padding: 1px");
   console.log("%c////////////////////////////////", "background-color: slategray; color: midnightblue; font-family: verdana; font-weight: bold");
   //check to see if a timer is running
