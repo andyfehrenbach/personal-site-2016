@@ -1,0 +1,225 @@
+$time: .5s;
+
+@import "normalize";
+@import "carousel";
+@import "mixins";
+// @import "slick";
+// @import "slick-theme";
+
+body {
+  margin: 0;
+  padding: 0 4vw;
+  padding-top: 2vw;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+    cursor: url(../../img/explosion-44.png), auto;
+    cursor: auto !important;
+}
+
+.😮 {
+  // text-align: center;
+}
+
+h1, a, p {
+  font-family: 'Work Sans', 'Helvetica Neue', 'Helvetica',  sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: -.053em;
+  color: #000;
+  cursor: url(../../img/explosion-44.png), auto;
+
+}
+
+a {
+  display: inline-block;
+}
+
+.expandable{
+  &:after {
+    content: url(../../img/down-arrow.svg);
+    width: 0.9em;
+    height: auto;
+    position: absolute;
+    right: .2em;
+    transform: rotate(0deg);
+    transition: transform $time;
+  }
+  &.flip:after {
+    @extend .expandable:after;
+    transform: rotate(-180deg) translateY(-10%);
+  }
+}
+
+
+.🍾 {
+    font-size: 10.2vw;
+       white-space: nowrap;
+       margin-left: -0.6vw;
+}
+
+.🌮 {
+    font-size: 4.57vw;
+      white-space: nowrap;
+      margin-left: -0.5vw;
+}
+
+.🔥 {
+  font-size: 14.2vw;
+  white-space: nowrap;
+}
+
+.🍆 {
+  font-size: 17.6vw;
+  white-space: nowrap;
+}
+
+.🙌 {
+  font-size: 4.94vw;
+  white-space: nowrap;
+}
+
+.😻 {
+  font-size: 8.85vw;
+  white-space: nowrap;
+}
+
+.ob {
+  font-size: 15.3vw;
+  line-height: .9;
+  margin-left: -0.8vw;
+  white-space: nowrap;
+}
+
+.🍻 {
+    font-size: 6.08vw;
+      white-space: nowrap;
+      margin-left: -0.3vw;
+      margin-top: .2em;
+}
+
+.👻 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3vw;
+}
+
+.💩 {
+  flex: 1;
+  width: 12vw;
+  height: 12vw;
+  background-color: #000;
+  position: relative;
+
+  &.😎 {
+    @include hover-color(#0077b5);
+  }
+
+  &.🏉 {
+    @include hover-color(#55acee);
+  }
+
+  &.🙃 {
+    @include hover-color(#3b5998);
+  }
+
+  &.🙀{
+    @include hover-color(#4078c0);
+  }
+
+  &.👯 {
+    @include hover-color(#bd081c);
+  }
+
+  &.codepen {
+    @include hover-color(#76daff);
+  }
+
+  &.🌈 {
+    &:hover {
+      background:
+        radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+        radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+        radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+        linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    }
+  }
+
+  img {
+    position: absolute;
+    max-height: 75%;
+    max-width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.💥 {
+  overflow-x: hidden;
+  width: 100%;
+  height: 88vh;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  cursor: none;
+}
+
+.🎯 {
+  width: 1200vw;
+  height: 100%;
+  background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, lightyellow, white, white);
+  position: relative;
+  left: 0;
+  transition: left 6s cubic-bezier(0.51, 0.32, 0.72, -0.02);
+}
+
+.magic {
+  left: -1100vw;
+  transition: left 45s linear;
+}
+
+.⛵️ {
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  font-size: 1vw;
+  margin: 0;
+  padding: 1vw 0;
+}
+
+// .🌀 {
+//   background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+//   height: 3px;
+//   width: 100vw;
+//   margin-left: -4vw;
+// }
+
+body:after, body::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    background: linear-gradient(100deg, orange, tomato,darkmagenta, cornflowerblue, mediumspringgreen, honeydew);
+    height: .4vw;
+    width: 100%;
+    // margin-left: -4vw;
+}
+
+@media (min-width:769px) {
+  a:hover {
+    color: blue;
+  }
+
+}
+
+@media (max-width:769px) {
+  .💥 {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    height: 96vh;
+  }
+
+}

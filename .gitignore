@@ -1,3 +1,9 @@
-.sass-cache/*
-*/.sass-cache/*
-.git/*
+.sass-cache/**
+/.sass-cache/**/*
+.git
+
+/stylesheets/.sass-cache/
+
+*.DS_store
+
+**/*.map
