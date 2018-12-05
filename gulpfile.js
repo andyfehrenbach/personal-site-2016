@@ -38,12 +38,18 @@ gulp.task('img', function(){
   .pipe(gulp.dest('dist/img'))
 });
 
+//copy fonts
+gulp.task('font', function(){
+  return gulp.src('app/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'))
+});
+
 //browsersync
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
       baseDir: 'dist'
-    },
+    }
   })
 })
 
@@ -51,10 +57,11 @@ gulp.task('browserSync', function() {
 //watcher
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
-  gulp.watch('app/stylesheets/scss/**/*.scss', ['sass']);
+  gulp.watch('app/stylesheets/scss/**/*.scss', { interval: 8000 }, ['sass']);
   gulp.watch('app/*.html', ['html']).on('change', browserSync.reload);
   gulp.watch('app/js/**/*.js', ['js']);
   gulp.watch('app/img/**/*', ['img']).on('change', browserSync.reload);
+  gulp.watch('app/font/**/*', ['font']).on('change', browserSync.reload);
 })
 
 
