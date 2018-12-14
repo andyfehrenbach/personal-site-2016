@@ -1,55 +1,14 @@
 $time: .5s;
 
 $dark: rgba(0,0,0,0.95);
+$nude: #f1d9d4;
+$yellow: #fff700;
+$midnight: #233f56;
 
 
-// @import "normalize";
+@import "normalize";
 // @import "mixins";
-
-// Typography
-
-@font-face {
-  font-family:'MutatorSans';
-  src: url('/fonts/MutatorSans.ttf') format("truetype");
-}
-
-@font-face {
-  font-family: 'Amstelvar VF';
-  src: url('/fonts/AmstelvarAlpha-VF.woff2') format("woff2");
-  font-weight: 38 250;
-  font-stretch: 60% 402%;
-  // font-style: normal;
-  // font-display: swap;
-}
-
-body, h1, h2, h3, p {
-  font-family: 'Amstelvar VF';
-  // text-transform: uppercase;
-  font-size: 100%;
-  line-height: 1;
-  color: $dark;
-  cursor: pointer;
-}
-
-h1 {
-  font-variation-settings: "wght" 38, "wdth" 402, "opsz" 48.2696, "XOPQ" 134.507, "XTRA" 297.999, "YOPQ" 50, "YTLC" 500, "YTSE" 27.7987, "GRAD" 88, "XTCH" 1000, "YTCH" 1000, "YTAS" 750, "YTDE" 250, "YTUC" 750, "YTRA" 1000;
-  font-size: 8em;
-  margin: 0;
-  transition: font-variation-settings 1.7s ease-in;
-
-  &:hover {
-    font-variation-settings: "wght" 88, "wdth" 402, "opsz" 38, "XOPQ" 234.507, "XTRA" 297.999, "YOPQ" 60, "YTLC" 500, "YTSE" 27.7987, "GRAD" 121, "XTCH" 1000, "YTCH" 1000, "YTAS" 750, "YTDE" 250, "YTUC" 750, "YTRA" 1000;
-  }
-}
-
-p {
-  font-variation-settings: "wght" 78.8876, "wdth" 804, "opsz" 13.5654, "XOPQ" 97.6487, "XTRA" 402, "YOPQ" 25.6865, "YTLC" 500, "YTSE" 18, "GRAD" 123.528, "XTCH" 1000, "YTCH" 1000, "YTAS" 750, "YTDE" 250, "YTUC" 750, "YTRA" 1000;
-  font-size: 2em;
-  margin: 0;
-  font-size: 1.8em;
-  line-height: 1.43;
-}
-
+@import "typography";
 
 body {
   margin: 0;
@@ -69,12 +28,18 @@ body {
  grid-template-columns: repeat(6, 1fr);
  grid-template-rows: 1fr 1.25fr;
  z-index: -1;
+
+ & div:nth-child(1),
+  div:nth-child(2),
+  div:nth-child(3) {
+    border-right: 2px solid $yellow;
+ }
 }
 
 .Color-block {
   grid-column: 1/7;
   grid-row: 2;
-  background-color: #f1d9d4;
+  background-color: $nude;
 }
 
 .Marbled-paper {
@@ -132,12 +97,37 @@ body {
   //   opacity: 0.9;
   // }
 
-  & p:first-letter {
-    font-size: 1000%;
+  & p:first-child:first-letter {
+    font-size: 1005%;
     float: left;
     line-height: 0;
-    padding: 10rem 4rem 3.1rem 0rem;
-    color: #213556;
-    margin-left: -3rem;
+    padding: 10rem 1rem 3.1rem 0rem;
+    color: transparent;
+    margin-left: -6rem;
+    background: url(../img/brush-texture.png), 87% center no-repeat, $midnight;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 220%;
+    background-blend-mode: screen;
   }
+}
+
+.Masker {
+  grid-row: 2/4;
+  grid-column: 7/9;
+  background-color: $nude;
+}
+
+.Year {
+  grid-column: 7/9;
+  grid-row: 2/4;
+  font-size: 17em;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  color: black;
+  /* -webkit-text-stroke: 5px white; */
+  --av-wght: 50;
+  --av-opsz: 21;
+  color: $midnight;
+  letter-spacing: -0.1em;
 }

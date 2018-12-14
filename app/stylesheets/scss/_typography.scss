@@ -1,0 +1,63 @@
+// Typography
+
+@font-face {
+    font-family:'MutatorSans';
+    src: url('/fonts/MutatorSans.ttf') format("truetype");
+  }
+  
+  @font-face {
+    font-family: 'Amstelvar VF';
+    src: url('/fonts/AmstelvarAlpha-VF.woff2') format("woff2");
+    font-weight: 38 250;
+    font-stretch: 60% 402%;
+    // font-style: normal;
+    // font-display: swap;
+  }
+  
+  body, h1, h2, h3, p {
+    // variable font variables
+    --av-wght: 78.88;
+    --av-wdth: 804;
+    --av-opsz: 13.56;
+    --av-XOPQ: 97;
+    --av-YOPQ: 25;
+    --av-XTRA: 402;
+    --av-GRAD: 123;
+  
+    font-family: 'Amstelvar VF';
+    font-variation-settings: "wght" var(--av-wght), "wdth" var(--av-wdth), "opsz" var(--av-opsz), "XOPQ" var(--av-XOPQ), "XTRA" var(--av-XTRA), "YOPQ" var(--av-YOPQ), "GRAD" var(--av-GRAD);
+    font-size: 100%;
+    line-height: 1;
+    color: $dark;
+    cursor: pointer;
+  }
+  h1 {
+    --av-wght: 53;
+    --av-wdth: 402;
+    --av-opsz: 48;
+    --av-XOPQ: 134;
+    --av-YOPQ: 50;
+    --av-XTRA: 297;
+    --av-GRAD: 88;
+  
+    font-size: 8em;
+    margin: 0;
+    transition: font-variation-settings 1.7s ease-in;
+  
+    &:hover {
+      --av-wght: 88;
+      --av-wdth: 402;
+      --av-opsz: 38;
+      --av-XOPQ: 234;
+      --av-YOPQ: 60;
+      --av-XTRA: 297;
+      --av-GRAD: 121;
+    }
+  }
+  
+  p {  
+    font-size: 2em;
+    margin: 0;
+    font-size: 1.8em;
+    line-height: 1.43;
+  }
